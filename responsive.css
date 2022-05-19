@@ -1,0 +1,83 @@
+/* responsiveness for tablet */
+
+@media screen and (max-width:1300px) {
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: rgb(58, 52, 52);
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+        z-index: 99;
+    }
+   
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    #click:checked ~ .menu-btn i:before{
+        content:"\f00d";
+    }
+    nav ul li{
+        margin: 35px;
+        
+    }
+    nav ul li a{
+        font-size: 25px;
+    }
+    nav ul li a:hover,
+    nav ul li a.active{
+        color: rgb(243, 134, 134);
+        background: none;
+    }
+    nav .menu-btn{
+        display: block;
+        color: white;
+        margin-right: 50px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    /* for home-page-section */
+    .main_car{
+        flex-wrap: wrap;
+        
+    }
+    
+}
+
+@media screen and (max-width:901px) {
+.main_car{
+    display: block;
+   
+}
+.cars{
+    
+    margin: 10px auto;
+}
+}
+@media screen and (min-width:0px) (max-width:444px){
+    nav{
+        width: 100%;
+    }
+}
+
+/* responsive for small mobile */
+@media screen and (max-width:400px) {
+    nav .logo{
+        f
+        font-size: 17px;
+        
+        padding: 5px 10px;
+        
+    }
+    nav ul li a{
+        
+        font-size: 16px;
+        font-weight: 400;
+        padding: 5px 0 2px 5px;
+        
+    }
+}
